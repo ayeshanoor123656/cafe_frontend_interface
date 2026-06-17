@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brew & Co. — Artisan Cafe</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <!-- HEADER & NAV -->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__logo">Brew &amp; Co.</div>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero__content container">
+        <p class="hero__tag">Fresh &bull; Artisan &bull; Local</p>
+        <h1 class="hero__title">Your Perfect Cup<br />Awaits You</h1>
+        <p class="hero__subtitle">Handcrafted coffee, warm atmosphere, and food made with love — right in the heart of the city.</p>
+        <div class="hero__buttons">
+          <a href="#menu" class="btn btn--primary">Explore Menu</a>
+          <a href="#contact" class="btn btn--outline">Find Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+      <div class="container about__grid">
+        <div class="about__text">
+          <p class="section__tag">Our Story</p>
+          <h2 class="section__title">More Than Just Coffee</h2>
+          <p>We started Brew &amp; Co. with one simple belief: great coffee brings people together. Every cup is carefully sourced, roasted in-house, and brewed to perfection by our passionate baristas.</p>
+          <p>Whether you're here for a quiet morning or a catch-up with friends, we craft every experience with warmth and care.</p>
+        </div>
+        <div class="about__stats">
+          <div class="stat__card">
+            <span class="stat__number">12+</span>
+            <span class="stat__label">Coffee Blends</span>
+          </div>
+          <div class="stat__card">
+            <span class="stat__number">5K+</span>
+            <span class="stat__label">Happy Customers</span>
+          </div>
+          <div class="stat__card">
+            <span class="stat__number">8</span>
+            <span class="stat__label">Years of Craft</span>
+          </div>
+          <div class="stat__card">
+            <span class="stat__number">100%</span>
+            <span class="stat__label">Organic Beans</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <p class="section__tag center">What We Serve</p>
+        <h2 class="section__title center">Our Menu</h2>
+
+        <div class="menu__tabs">
+          <button class="tab__btn active" data-category="all">All</button>
+          <button class="tab__btn" data-category="coffee">Coffee</button>
+          <button class="tab__btn" data-category="food">Food</button>
+          <button class="tab__btn" data-category="cold">Cold Drinks</button>
+        </div>
+
+        <div class="menu__grid" id="menuGrid">
+
+          <article class="menu__card" data-category="coffee">
+            <div class="menu__icon">&#9749;</div>
+            <h3>Espresso</h3>
+            <p>A rich, bold shot of our signature blend.</p>
+            <span class="menu__price">$2.50</span>
+          </article>
+
+          <article class="menu__card" data-category="coffee">
+            <div class="menu__icon">&#9749;</div>
+            <h3>Cappuccino</h3>
+            <p>Espresso topped with velvety steamed milk foam.</p>
+            <span class="menu__price">$4.00</span>
+          </article>
+
+          <article class="menu__card" data-category="coffee">
+            <div class="menu__icon">&#9749;</div>
+            <h3>Flat White</h3>
+            <p>Smooth espresso with silky microfoam milk.</p>
+            <span class="menu__price">$4.50</span>
+          </article>
+
+          <article class="menu__card" data-category="food">
+            <div class="menu__icon">&#127850;</div>
+            <h3>Butter Croissant</h3>
+            <p>Flaky, golden, baked fresh every morning.</p>
+            <span class="menu__price">$3.00</span>
+          </article>
+
+          <article class="menu__card" data-category="food">
+            <div class="menu__icon">&#127829;</div>
+            <h3>Avocado Toast</h3>
+            <p>Sourdough, smashed avocado, chili flakes.</p>
+            <span class="menu__price">$7.50</span>
+          </article>
+
+          <article class="menu__card" data-category="food">
+            <div class="menu__icon">&#127856;</div>
+            <h3>Blueberry Muffin</h3>
+            <p>Soft, moist muffin bursting with berries.</p>
+            <span class="menu__price">$3.50</span>
+          </article>
+
+          <article class="menu__card" data-category="cold">
+            <div class="menu__icon">&#129380;</div>
+            <h3>Iced Latte</h3>
+            <p>Cold espresso with milk over ice.</p>
+            <span class="menu__price">$5.00</span>
+          </article>
+
+          <article class="menu__card" data-category="cold">
+            <div class="menu__icon">&#129380;</div>
+            <h3>Cold Brew</h3>
+            <p>Steeped 12 hours for a smooth, bold finish.</p>
+            <span class="menu__price">$5.50</span>
+          </article>
+
+          <article class="menu__card" data-category="cold">
+            <div class="menu__icon">&#127822;</div>
+            <h3>Mango Smoothie</h3>
+            <p>Fresh mango, yogurt, and a hint of honey.</p>
+            <span class="menu__price">$6.00</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <p class="section__tag">Come Visit</p>
+          <h2 class="section__title">Find Us</h2>
+          <ul class="contact__list">
+            <li>&#128205; 42 Elmwood Avenue, Downtown</li>
+            <li>&#128222; +1 (555) 012-3456</li>
+            <li>&#9993; hello@brewandco.com</li>
+            <li>&#128336; Mon–Fri: 7am – 9pm</li>
+            <li>&#128336; Sat–Sun: 8am – 10pm</li>
+          </ul>
+        </div>
+
+        <form class="contact__form" id="contactForm">
+          <h3>Send Us a Message</h3>
+          <div class="form__group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="e.g. Alex Johnson" required />
+          </div>
+          <div class="form__group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form__group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Ask us anything..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+          <p class="form__success" id="formSuccess">&#10003; Thanks! We'll get back to you soon.</p>
+        </form>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__logo">Brew &amp; Co.</p>
+        <p class="footer__copy">&copy; 2026 Brew &amp; Co. All rights reserved.</p>
+        <div class="footer__links">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
